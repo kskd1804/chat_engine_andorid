@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/logo"
+        android:textSize="110sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to chatEngine"
+        android:id="@+id/welcomeText"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:textSize="40sp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Thanks for installing! Let's get you set up!"
+        android:textColor="#898989"
+        android:id="@+id/welcomeSubText"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="22dp"
+        android:hint="Enter username"
+        android:textColor="#232323"
+        android:textColorHint="#898989"
+        android:id="@+id/username"
+        android:layout_below="@+id/welcomeSubText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="22dp"
+        android:textColorHint="#898989"
+        android:hint="Password"
+        android:textColor="#232323"
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:id="@+id/continueButton"
+        android:background="@color/textColor"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NOT YET REGISTERED?"
+        android:textSize="22dp"
+        android:textColor="#898989"
+        android:textStyle="bold"
+        android:id="@+id/notOncE"
+        android:clickable="true"
+        android:layout_below="@id/continueButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/logo"
+        android:textSize="110sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to chatEngine"
+        android:id="@+id/welcomeText"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:textSize="40sp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tell us about you - connect with your friends"
+        android:id="@+id/welcomeTextSmall"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#787878"
+        android:layout_below="@+id/welcomeText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Firstname"
+        android:ems="10"
+        android:id="@+id/firstname"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/welcomeTextSmall"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#676767"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Lastname"
+        android:ems="10"
+        android:id="@+id/lastname"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/welcomeTextSmall"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#676767"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="Mobile"
+        android:id="@+id/mobile"
+        android:textColor="#676767"
+        android:layout_below="@+id/firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/genderGroup"
+        android:layout_below="@+id/dob"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:id="@+id/male"
+            android:checked="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="30dp"
+            android:text="Male"/>
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/female"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:text="Female"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:id="@+id/continueButton"
+        android:background="@color/textColor"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/genderGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Date of Birth(YYYY/MM/DD)"
+        android:ems="10"
+        android:id="@+id/dob"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/mobile"
+        android:layout_alignLeft="@+id/mobile"
+        android:layout_alignStart="@+id/mobile"
+        android:layout_alignRight="@+id/lastname"
+        android:layout_alignEnd="@+id/lastname" />
+
+
+</RelativeLayout>

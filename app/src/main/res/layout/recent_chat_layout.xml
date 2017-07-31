@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/recent_chat_img"
+        android:src="@drawable/test"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kousthubha Das Sai"
+        android:id="@+id/recent_chat_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/recent_chat_img"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:maxLength="16"
+        android:layout_toEndOf="@+id/recent_chat_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You: Hello!How are you? There?..."
+        android:textSize="16dp"
+        android:id="@+id/recent_chat_msg"
+        android:maxLength="26"
+        android:textColor="#000"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/recent_chat_name"
+        android:layout_toRightOf="@+id/recent_chat_img"
+        android:layout_toEndOf="@+id/recent_chat_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="06:15 AM"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="3dp"
+        android:textStyle="normal"
+        android:textColor="#585858"
+        android:id="@+id/recent_chat_msg_time"
+        android:layout_above="@+id/recent_chat_msg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="S"
+        android:id="@+id/recent_chat_msg_status"
+        android:textColor="@color/textColor"
+        android:textAlignment="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginRight="8dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/recent_chat_msg_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
